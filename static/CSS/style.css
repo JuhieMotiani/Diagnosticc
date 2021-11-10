@@ -1,0 +1,369 @@
+                        body {
+                            font-family: "futura";
+                            overflow: hidden;
+                        }
+                        
+                        .wrapper {
+                            display: flex;
+                            flex-direction: row;
+                            width: 100vw;
+                            height: 100vh;
+                            /* padding: 1vh; */
+                            transition: all 0.2s ease;
+                            background: #FFEFE5;
+                            align-items: center;
+                            justify-content: space-evenly;
+                        }
+                        
+                        .wrapper h1 {
+                            font-size: 7vh;
+                            /* position: relative; */
+                            z-index: 2;
+                            transition: all 0.2s ease;
+                            text-align: center;
+                            margin-top: 11vh;
+                            margin-left: -15vh;
+                            color: #0063ae;
+                        }
+                        
+                        .front img {
+                            width: 20vh;
+                            height: 20vh;
+                            margin-top: -20vh;
+                            margin-left: 68vh;
+                        }
+                        
+                        .wrapper h3 {
+                            font-size: 6vh;
+                            /* position: relative; */
+                            z-index: 2;
+                            transition: all 0.2s ease;
+                            text-align: center;
+                            margin-top: 5vh;
+                            margin-left: 5vh;
+                            color: #34CBAE;
+                        }
+                        
+                        .wrapper:before {
+                            position: absolute;
+                            z-index: 0;
+                            left: 0;
+                            /* content: url(https://res.cloudinary.com/xdesro/image/upload/v1507078457/flourish_xebj81.svg); */
+                            transition: all 0.2s ease;
+                        }
+                        
+                        .wrapper:after {
+                            position: absolute;
+                            right: 0;
+                            /* content: url(https://res.cloudinary.com/xdesro/image/upload/q_48/v1507128037/flourish-blue_wkuqd1.svg); */
+                            transition: all 0.2s ease;
+                            transform: translateX(5vh);
+                            opacity: 0;
+                        }
+                        
+                        .card {
+                            position: relative;
+                            z-index: 2;
+                            width: 45vh;
+                            height: 60vh;
+                            transition: all 0.2s ease;
+                        }
+                        
+                        .card1 {
+                            position: relative;
+                            margin-top: 4vh;
+                            z-index: 2;
+                            width: 100vh;
+                            height: 60vh;
+                            transition: all 0.2s ease;
+                        }
+                        
+                        .side {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            transition: all 0.4s ease;
+                            /* border: 2vh solid #34CBAE; */
+                            animation-fill-mode: both;
+                            transform-style: preserve-3d;
+                            backface-visibility: hidden;
+                            perspective: 600px;
+                        }
+                        
+                        .front {
+                            transform: rotateX(0) rotateY(0deg);
+                            /* background: #FFEFE5; */
+                            opacity: 1;
+                        }
+                        
+                        .front p {
+                            color: #34CBAE;
+                        }
+                        
+                        .back {
+                            opacity: 0;
+                            transform: rotateX(0) rotateY(180deg);
+                            background-color: #3B465C;
+                            background-image: url(https://res.cloudinary.com/xdesro/image/upload/q_37/v1507161529/flourish-blue-vert_lilazi.png);
+                            background-position: -78% 74%;
+                            background-size: 120%;
+                            width: 150vh;
+                        }
+                        
+                        .back1 {
+                            overflow: hidden;
+                            opacity: 0;
+                            transform: rotateX(0) rotateY(180deg);
+                            background-color: #3B465C;
+                            background-image: url(https://res.cloudinary.com/xdesro/image/upload/q_37/v1507161529/flourish-blue-vert_lilazi.png);
+                            background-position: -78% 74%;
+                            background-size: 120%;
+                            visibility: hidden;
+                        }
+                        
+                        .back p {
+                            color: #DDDCC8;
+                        }
+                        
+                        .dot {
+                            position: absolute;
+                            width: 12vh;
+                            height: 12vh;
+                            padding: 0;
+                            border-radius: 100%;
+                        }
+                        
+                        .front .dot {
+                            background: linear-gradient(to bottom, #34CBAE, #248e7a);
+                        }
+                        
+                        .front .dot:before {
+                            z-index: 2;
+                            transform: scaleX(-1);
+                        }
+                        
+                        .front .dot:after {
+                            position: absolute;
+                            z-index: 0;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                            content: "";
+                            border-radius: 100%;
+                            background: url(https://res.cloudinary.com/xdesro/image/upload/q_36/v1507165531/flourish-green-vert_ojslrs.png);
+                            background-size: 50vh;
+                        }
+                        
+                        .back .dot {
+                            background: #DDDCC8;
+                            background-image: url(https://res.cloudinary.com/xdesro/image/upload/v1507161431/rotated-grey_p9bx0a.png);
+                            background-size: cover;
+                        }
+                        
+                        .dot.active {
+                            top: 50%;
+                            right: 0;
+                            left: 0;
+                            width: 90%;
+                            height: auto;
+                            margin: 0 auto;
+                            padding-bottom: 90%;
+                            transform: translateY(-50%);
+                        }
+                        
+                        .dot.active:before {
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            padding-bottom: 100%;
+                            content: "";
+                            border-radius: 0 0 100% 100%;
+                            background-image: url(https://res.cloudinary.com/xdesro/image/upload/q_49/v1507162121/dear_d1gwj5.png);
+                            background-size: cover;
+                        }
+                        
+                        .front .dot:first-of-type {
+                            top: 2vh;
+                            right: 2vh;
+                        }
+                        
+                        .front .dot:first-of-type:after {
+                            transform: rotate(125deg);
+                            background-position: 50% 50%;
+                            background-size: 40vh;
+                        }
+                        
+                        .front .dot:last-of-type {
+                            bottom: 2vh;
+                            left: 2vh;
+                        }
+                        
+                        .front .dot:last-of-type:after {
+                            background-position: 25% 50%;
+                            background-size: 40vh;
+                        }
+                        
+                        .flip {
+                            position: absolute;
+                            z-index: 30;
+                            bottom: 1vh;
+                            left: 1vh;
+                            visibility: hidden;
+                            width: 10vh;
+                            height: 3vh;
+                        }
+                        
+                        .flip~.checkbox {
+                            position: absolute;
+                            z-index: 2;
+                            bottom: 2vh;
+                            left: 1vh;
+                            display: block;
+                            width: 22px;
+                            height: 22px;
+                            cursor: pointer;
+                            transition: all 0.4s ease;
+                        }
+                        
+                        .flip~.checkbox:before {
+                            content: "click this guy.";
+                            display: block;
+                            position: absolute;
+                            width: 100vh;
+                            bottom: 3vh;
+                            left: 1vh;
+                            color: #34CBAE;
+                            transition: all 0.2s ease;
+                        }
+                        
+                        .flip~.checkbox:after {
+                            position: absolute;
+                            top: 14px;
+                            left: 14px;
+                            width: 52px;
+                            height: 2px;
+                            content: "";
+                            border-radius: 50px;
+                            background: #DBCDC3;
+                        }
+                        
+                        .flip~.checkbox label {
+                            position: absolute;
+                            z-index: 1;
+                            top: 4px;
+                            left: 4px;
+                            display: block;
+                            width: 22px;
+                            height: 22px;
+                            cursor: pointer;
+                            transition: all 0.4s ease;
+                            border-radius: 50px;
+                            background: white;
+                            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+                        }
+                        
+                        .flip~.checkbox label:after {
+                            position: absolute;
+                            top: 6px;
+                            left: 6px;
+                            width: 10px;
+                            height: 10px;
+                            content: "";
+                            border-radius: 50px;
+                            background: #34CBAE;
+                            box-shadow: inset 0 1px 1px black, 0 1px 0 rgba(255, 255, 255, 0.9);
+                        }
+                        
+                        .flip:checked+.checkbox:before {
+                            color: #DDDCC8;
+                        }
+                        
+                        .flip:checked+.checkbox:after {
+                            background: #272e3d;
+                        }
+                        
+                        .flip:checked+.checkbox label {
+                            left: 54px;
+                        }
+                        
+                        .flip:checked+.checkbox label:after {
+                            background: #DDDCC8;
+                        }
+                        
+                        .flip:checked~.wrapper {
+                            background: #3B465C;
+                        }
+                        
+                        .flip:checked~.wrapper:before {
+                            transform: translateX(-5vh);
+                            opacity: 0;
+                        }
+                        
+                        .flip:checked~.wrapper:after {
+                            transform: translateX(0);
+                            opacity: 1;
+                        }
+                        
+                        .flip:checked~.wrapper h1 {
+                            color: #DDDCC8;
+                        }
+                        
+                        .flip:checked~.wrapper .side.front {
+                            transform: rotateX(0) rotateY(180deg);
+                            opacity: 0;
+                        }
+                        
+                        .flip:checked~.wrapper .side.back {
+                            opacity: 1;
+                            transform: rotateX(0) rotateY(0deg);
+                        }
+                        
+                        .flip:checked~.shameless-plug {
+                            color: #DCCDC3;
+                        }
+                        
+                        .flip:checked~.shameless-plug .icon {
+                            fill: #DCCDC3;
+                        }
+                        
+                        .shameless-plug {
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            display: flex;
+                            width: 50%;
+                            color: #34CBAE;
+                            align-items: center;
+                            justify-content: flex-end;
+                        }
+                        
+                        .shameless-plug .icon {
+                            fill: #34CBAE;
+                        }
+                        
+                        @media (max-width: 860px) {
+                            .wrapper {
+                                flex-direction: column;
+                            }
+                            .wrapper h1 {
+                                font-size: 10vw;
+                            }
+                            .flip {
+                                z-index: 101;
+                            }
+                            .flip~.checkbox {
+                                z-index: 100;
+                            }
+                        }
+                        /* CUSTOM  */
+                        
+                        .JUGGAD {
+                            background-color: #FFE53B;
+                            background-image: linear-gradient(147deg, #FFE53B 0%, #fd3838 74%);
+                            min-height: 100vh;
+                            font-family: "Fira Sans", sans-serif;
+                            display: flex;
+                        }
