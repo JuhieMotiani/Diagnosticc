@@ -16,10 +16,9 @@ It is a Covid-19, Pneumonia and Normal Chest X-ray detection Web-App 🖥 where 
 
 ## Project Set-up Guidelines
 1. Dowload or clone this repo and open it in any IDE like VSCode, PyCharm, etc.
-2. Open the terminal, create a virtual environment. 
-3. Install the required libraries that are neccesary from [requirements.txt](#).
-4. Go to the app directory in virtual environment.
-5. Run the code ``python app.py``
+2. Install the required libraries that are neccesary from [requirements.txt](https://github.com/JuhieMotiani/Diagnosticc/blob/main/requirements.) using ``pip install -r requirements.txt``.
+4. Go to the file server.py.
+5. Run the code ``python server.py``
 
 ## Our Results
 
