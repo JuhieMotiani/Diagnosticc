@@ -1,48 +1,29 @@
 # Diagnosticc
-A website 🖥 that effectively classifies Covid-19, Pneumonia and Normal Chest X-ray images
+It is a Covid-19, Pneumonia and Normal Chest X-ray detection Web-App 🖥 where you can detect the X-ray from the given 3 classes, Flask is used to amalgamate backend with the fronted.
 
-DeepFake Detection Web-App 🖥 using Deep Learning(ResNext and LSTM), Flask and ReactJs where you can predict whether a video is FAKE Or REAL along with the confidence ratio. 
+<img align=right width="474" alt="Diagnosticc-logo" src="https://user-images.githubusercontent.com/58872872/141322453-7de3c753-944c-47aa-a451-73058aa8117b.png">
 
 ## Explanation of the Project
-- We've created a DeepFake Detection system which intends to detect DeepFake videos using Deep Learning techniques like ResNext and LSTM. Also integrated the  trained model with the Frontend UI which uses ReactJs and Backend uses Flask.
+- We've trained the Detection model using two algorithms that is CNN and VGG16. We have used CNN model in Web-app because CNN produced an testing accuracy of 95.17% beating VGG16 by 4%.
 
-- The Dataset we've used to train our model is [here](https://github.com/yuezunli/celeb-deepfakeforensics).
+- The Dataset we've used to train our models is [here](https://drive.google.com/drive/folders/1hQ5ihPKGIdbe8qNwKIwtmlj1yytZiiNE?usp=sharing).
 
-- To find our trained model follow this [link](https://drive.google.com/drive/folders/1-zErGZ9T89TplQs3ws4QVRFlqE-ljW6l?usp=sharing).
+- You can find Colab file to train CNN from here [here](https://github.com/JuhieMotiani/Diagnosticc/blob/main/CNN_Model.ipynb).
 
-- To train our model we've took help from [here](https://github.com/abhijitjadhav1998/Deepfake_detection_using_deep_learning/tree/master/Model%20Creation).
-  Thanks to them!
+- You can find Colab file to train VGG16 from here [here](https://github.com/JuhieMotiani/Diagnosticc/blob/main/VGG16_Model.ipynb).
 
-- To understand the project in a better way it is structured in below format:
-```
-DeepFake-Detection
-    |
-    |--- DeepFake_Detection
-    |--- Implementation Video
-    |--- Project-Setup.txt
-    |--- Requiremnts.txt
-```
-1. DeepFake_Detection - This is the root folder.
-
-2. Implementation Video - It shows the whole working of the project. 
-
-3. Project-Setup.txt - In this file we've written all the necessary steps to run this project.
-
-4. Requirements.txt - Python libraries needed for this project. 
+- After training the model, we have created a Flask Web-Application that can easily diagnosis the covid-19, pneumonia and normal from the uploaded chest X-ray image.
 
 ## Project Set-up Guidelines
-To set up the project. All the steps and guidelines regarding that are listed [here](https://github.com/iamdhrutipatel/DeepFake-Detection/blob/main/Project-Setup.txt).
-
-## Note
-1. In the root folder(DeepFake_Detection), create a new folder called "Uploaded_Files".
-
-2. In the root folder(DeepFake_Detection), create a new folder called "model" and add the [model file](https://drive.google.com/drive/folders/1-zErGZ9T89TplQs3ws4QVRFlqE-ljW6l?usp=sharing) in it.
-
-<b>Add these folders to the root folder(DeepFake_Detection). Since, the path has already been given to the "server.py" file and also to avoid any path related errors.</b>
+1. Dowload or clone this repo and open it in any IDE like VSCode, PyCharm, etc.
+2. Open the terminal, create a virtual environment. 
+3. Install the required libraries that are neccesary from [requirements.txt](#).
+4. Go to the app directory in virtual environment.
+5. Run the code ``python app.py``
 
 ## Our Results
 
-1) Accuracy of the Model:
+1) Testing Accuracy and Graph of the CNN-Model:
 <img width="250" height="50" alt="Model Accuracy" src="https://user-images.githubusercontent.com/58872872/133935912-1def7615-6538-4c88-9134-8f94a9367965.png">
 
 2) Training and Validation Accuracy Graph:
@@ -56,8 +37,11 @@ To set up the project. All the steps and guidelines regarding that are listed [h
 
 - To see the working of the project, follow this [link](https://github.com/iamdhrutipatel/DeepFake-Detection/blob/main/Implementation%20Video.mp4).
 
+## Video
+You can find the video demonstartion of the project from [here](https://github.com/JuhieMotiani/Diagnosticc/blob/main/Implementation%20Video.mp4).
+
 ## Facing any issues???
-Feel free to [open an issue](https://github.com/iamdhrutipatel/DeepFake-Detection/issues/new?assignees=&labels=Query&title=Query). We'll be glad to help you.❤️
+Feel free to [open an issue](https://github.com/juhiemotiani/Diagnosticc/issues/new?assignees=&labels=Query&title=Query). We'll be glad to help you.❤️
 
 ## Developers
 1. [Juhie Motiani](https://github.com/JuhieMotiani)
