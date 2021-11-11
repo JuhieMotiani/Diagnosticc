@@ -33,8 +33,7 @@ It is a Covid-19, Pneumonia and Normal Chest X-ray detection Web-App 🖥 where 
 
 <img width="400" height="250" alt="VGG16-Graph" src="https://user-images.githubusercontent.com/58872872/141326221-33b5ce79-e368-4e97-b14f-af1eb854945d.png"/>
 
-<img width="250" height="50" alt="VGG16 Testing Accuracy" src="https://user-images.githubusercontent.com/58872872/141326323-98e3a295-107c-4c93-a8a3-877ae8d58ccf.png"/>
-
+<img width="250" height="50" alt="VGG16 Testing Accuracy" src="https://user-images.githubusercontent.com/58872872/141326805-a522ec05-7177-49ce-81ac-e16647b8bb27.png"/>
 
 ## Video
 You can find the video demonstartion of the project from [here](https://github.com/JuhieMotiani/Diagnosticc/blob/main/Implementation%20Video.mp4).
