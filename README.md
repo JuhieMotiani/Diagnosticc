@@ -1,7 +1,7 @@
 # Diagnosticc
 It is a Covid-19, Pneumonia and Normal Chest X-ray detection Web-App 🖥 where you can detect the X-ray from the given 3 classes, Flask is used to amalgamate backend with the fronted.
 
-<img align=right width="474" alt="Diagnosticc-logo" src="https://user-images.githubusercontent.com/58872872/141322453-7de3c753-944c-47aa-a451-73058aa8117b.png">
+<img align=right width="474" alt="Diagnosticc-logo" src="https://user-images.githubusercontent.com/58872872/141322453-7de3c753-944c-47aa-a451-73058aa8117b.png"/>
 
 ## Explanation of the Project
 - We've trained the Detection model using two algorithms that is CNN and VGG16. We have used CNN model in Web-app because CNN produced an testing accuracy of 95.17% beating VGG16 by 4%.
@@ -24,18 +24,17 @@ It is a Covid-19, Pneumonia and Normal Chest X-ray detection Web-App 🖥 where 
 ## Our Results
 
 1) Testing Accuracy and Graph of the CNN-Model:
-<img width="250" height="50" alt="Model Accuracy" src="https://user-images.githubusercontent.com/58872872/133935912-1def7615-6538-4c88-9134-8f94a9367965.png">
 
-2) Training and Validation Accuracy Graph:
-<img width="378" alt="Accuracy Graph" src="https://user-images.githubusercontent.com/58872872/133936040-4bfa44a7-45c5-499b-8a10-f253cbcab56c.png">
+<img width="400" height="250" alt="CNN-Graph" src="https://user-images.githubusercontent.com/58872872/141325655-97cf5943-b600-47b6-abba-2cee9db9a8b0.png"/>
 
-3) Training and Validation Loss Graph:
-<img width="381" alt="Loss Graph" src="https://user-images.githubusercontent.com/58872872/133935983-b4d9275f-e841-4b69-86cd-79c770ea2aa1.png">
+<img width="250" height="50" alt="CNN Testing Accuracy" src="https://user-images.githubusercontent.com/58872872/141325943-7f7e3c16-bf3d-4f86-a7ae-001fd441bc5d.png"/>
 
-4) Confusion Matrix:
-<img width="402" alt="Confusion Matrix" src="https://user-images.githubusercontent.com/58872872/133936080-d2b39804-4a99-47b8-8be4-87ba77161961.png">
+2) Testing Accuracy and Graph of the VGG16-Model:
 
-- To see the working of the project, follow this [link](https://github.com/iamdhrutipatel/DeepFake-Detection/blob/main/Implementation%20Video.mp4).
+<img width="400" height="250" alt="VGG16-Graph" src="https://user-images.githubusercontent.com/58872872/141326221-33b5ce79-e368-4e97-b14f-af1eb854945d.png"/>
+
+<img width="250" height="50" alt="VGG16 Testing Accuracy" src="https://user-images.githubusercontent.com/58872872/141326323-98e3a295-107c-4c93-a8a3-877ae8d58ccf.png"/>
+
 
 ## Video
 You can find the video demonstartion of the project from [here](https://github.com/JuhieMotiani/Diagnosticc/blob/main/Implementation%20Video.mp4).
