@@ -12,7 +12,7 @@ It is a Covid-19, Pneumonia and Normal Chest X-ray detection Web-App 🖥 where 
 
 - You can find Colab file to train VGG16 from here [here](https://github.com/JuhieMotiani/Diagnosticc/blob/main/VGG16_Model.ipynb).
 
-- After training the model, we have created a Flask Web-Application that can easily diagnosis the covid-19, pneumonia and normal from the uploaded chest X-ray image.
+- After training the model, we have created a Flask Web-Application that can easily diagnose the covid-19, pneumonia and normal from the uploaded chest X-ray image.
 
 ## Project Set-up Guidelines
 1. Dowload or clone this repo and open it in any IDE like VSCode, PyCharm, etc.
